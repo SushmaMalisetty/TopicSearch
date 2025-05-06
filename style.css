@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #4a90e2;
+}
+
+/* Dropdown styling */
+.category-dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #fff;
+}
+
+.category-dropdown:focus {
+  border-color: #4a90e2;
+}
+
+.topics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.topic-card {
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+  text-align: left;
+}
+
+.topic-card h3 {
+  margin: 0 0 8px 0;
+}
+
+.topic-card p {
+  margin: 0;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Category Colors */
+.topic-card.physics {
+  background-color: #e1f0ff;
+  border-left: 6px solid #4a90e2;
+}
+
+.topic-card.mathematics {
+  background-color: #eaffea;
+  border-left: 6px solid #34a853;
+}
+
+.topic-card.chemistry {
+  background-color: #fff5e6;
+  border-left: 6px solid #fbbc04;
+}
+
+.topic-card.biology {
+  background-color: #ffe6f0;
+  border-left: 6px solid #d500f9;
+}
+
+.no-topics {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+mark {
+  background-color: #ffff00;
+  font-weight: bold;
+}
